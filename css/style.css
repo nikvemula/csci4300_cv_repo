@@ -1,0 +1,215 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(227, 227, 235);
+  }
+
+/****************   Nav Section **********************/
+nav {
+  background-color: rgba(0, 94, 255, 0.3);
+  /*border: 2px solid #1b1935;*/
+  display: flex;
+  justify-content: space-between;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0.2, 0, 0, 0.2);
+  padding: 0 20px; 
+	align-items: center;
+  border: 1px solid #645fa8; 
+  text-decoration: hotpink;
+}
+/***********************  Footer Section   **************************/
+footer {
+  background-color:rgba(0, 94, 255, 0.3);
+  border: 1px solid #645fa8; 
+  justify-content: space-between;
+	align-items: center;
+	display: flex;
+  justify-content: center;
+  backdrop-filter: blur(20px);
+  padding: 0 20px; 
+  box-shadow: 0 4px 10px rgba(0.2, 0, 0, 0.2);
+
+}
+
+/*********** Splash Page ************************/
+header {
+  color: white;
+  transition: width 2s ease-in-out;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  padding: 20px;
+  margin-left: 20px;
+}
+
+header h1 {
+  font-family:"Kaushan Script", cursive;
+  font-size:15;
+  color:cornflowerblue;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+
+header img {
+  border-radius: 10px;
+  border: 2px solid cornflowerblue;
+  width:250px;
+  height:250px;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0.2, 0, 0, 0.2);
+
+}
+
+.address {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: bold;
+  align-items: center;
+  text-align: center;
+  color:cornflowerblue;
+ 
+}
+
+.tagline {
+  font-weight: 100;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color:cornflowerblue;
+  text-align: center;
+}
+
+/************* Sections ********************/
+hr {
+  background-color: cornflowerblue;
+  height: 1px;    
+  opacity: 30;
+  margin: 40px auto;
+  border: none;
+  width:85%;
+  
+}
+
+section h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: cornflowerblue;
+  margin-left: 15px auto;
+  padding-left: 15px;
+}
+
+section dl {
+  display: grid;
+  margin-left: 40px auto;
+  padding-left: 40px;
+  
+}
+
+section ul {
+  list-style-type: square;
+  margin-left: 40px auto;
+  padding-left: 40px;
+}
+
+section a {
+  color:cornflowerblue;
+  text-decoration: none;
+}
+
+section a:hover {
+  color: hotpink;
+}
+
+/**************   Projects   *****************/
+.three-col {
+	display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  align-self: center;
+  align-content: center;
+  text-align: center;
+  
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border: 7px solid cornflowerblue; 
+  border-radius: 10px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  transition: all .3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+  padding: 3em;
+  text-align: center;
+  
+}
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+    nav {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    }
+
+    .three-col {
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-content: center;
+      
+    }
+}
+
+/**************   Contact Page   *****************/
+.one-col {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  justify-content: center;
+  margin-left: 400px;
+  padding: 8px;
+  gap: 8px;
+  margin-bottom: 60px;
+ 
+}
+
+input {
+  padding: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+
+
+textarea {
+  font-size: 1rem;
+  resize: vertical;
+  min-height: 100px;
+  justify-content: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  transition: border-color 0.2s, ease, box-shadow 0.2s ease;
+}
+
+input[type="submit"] {
+  background: rgb(152, 184, 243);
+  color:white;
+  padding: 13px;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
